@@ -4,7 +4,8 @@ Site para treino de HTML, CSS. (em breve JS)
 
 
 ## Screenshot
-![Preview do site](![readme](https://github.com/user-attachments/assets/4ddd0e19-5d16-40cc-8118-0b76a4da0edf))
+![Preview do site]  ![sitesimples png](https://github.com/user-attachments/assets/62bf9e18-94b0-4a20-8732-b5343288cfc0)
+
 
 
 ## Tecnologias
