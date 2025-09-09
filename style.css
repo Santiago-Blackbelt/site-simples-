@@ -1,0 +1,230 @@
+<style>
+/* -------------------- RESET BÁSICO -------------------- */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2d2f34;
+  color: #FFFFFF;
+  box-sizing: border-box;
+}
+
+li, a, button {
+  font-size: 18px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+  background-color: #2d2f34;
+  padding: 15px 20px;
+  color: #FFD700;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+/* Topo do header (logo | nav | contato) */
+.header-top {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Logo */
+header .logo .logotipo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #FFD700;
+}
+
+/* Menu */
+header .main-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+header .main-nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+header .main-nav .nav-links a {
+  color: #FFD700;
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+header .main-nav .nav-links a:hover {
+  color: #E63946;
+}
+
+/* Botão de contato */
+header .contato { }
+.btn-contato {
+  display: inline-block;
+  background-color: #FFD700;
+  color: #2d2f34;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s, transform 0.12s;
+}
+.btn-contato:hover {
+  background-color: #E63946;
+  color: #fff;
+  transform: scale(1.03);
+}
+
+/* Branding (imagem + título) */
+header .branding {
+  text-align: center;
+  max-width: 900px;
+}
+header .branding img {
+  max-width: 200px;
+  display: block;
+  margin: 0 auto 12px;
+  border-radius: 8px;
+  border: 3px solid #E63946;
+}
+header h1 {
+  margin: 0;
+  font-size: 32px;
+  color: #FFD700;
+}
+header p {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #FFD700;
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+  padding: 20px;
+}
+section {
+  margin-bottom: 30px;
+  border: 1px solid #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+h2 {
+  color: #FFD700;
+  margin-bottom: 15px;
+}
+
+/* -------------------- FORMULÁRIOS -------------------- */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+input[type="text"],
+input[type="date"],
+input[type="file"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  background-color: #333333;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+input[type="text"]::placeholder {
+  color: #bbb;
+}
+button[type="submit"] {
+  background-color: #E63946;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+button[type="submit"]:hover {
+  background-color: #c9303e;
+}
+
+/* -------------------- TABELAS -------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #1a1a1a;
+  color: #FFFFFF;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #444;
+  text-align: center;
+}
+thead {
+  background-color: #003366;
+  color: #FFD700;
+}
+tfoot {
+  background-color: #222;
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* -------------------- OUTROS ELEMENTOS -------------------- */
+figcaption {
+  font-style: italic;
+  color: #ccc;
+  margin-top: 8px;
+}
+img {
+  max-width: 100%;
+  border: 3px solid #E63946;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+abbr {
+  text-decoration: none;
+  border-bottom: 1px dotted #FFD700;
+  cursor: help;
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+  background-color: #003366;
+  color: #FFD700;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
+/* -------------------- RESPONSIVIDADE -------------------- */
+@media (max-width: 760px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-nav .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+</style>
